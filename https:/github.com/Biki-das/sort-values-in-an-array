@@ -1,0 +1,31 @@
+#include <iostream>
+
+// this is a simple program to understand how sorting works.
+// you cam use float inplace of instead of int and the program will work normally as generic programming takes place;
+using namespace std;
+
+
+int main(){
+
+
+    int array[] = {3,8,9,6,5,7,8};
+
+    cout<<"Unsorted value\n"<<endl;
+
+    for (int n: array){
+        cout<<n<< " ";
+    }
+
+    cout<<endl;
+
+    cout<<"sorted value\n"<<endl;
+
+    sort(array,array+7);
+
+    for (int n : array){
+        cout<<n<< " ";
+    }
+
+
+    return 0;
+}
